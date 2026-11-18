@@ -1,0 +1,8 @@
+
+name:CI
+on:[push]
+job:
+test:
+runs-on: ubuntu -latest
+-uses:actions/checkout@v4
+-run:python3 test_app.py
